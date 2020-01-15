@@ -16,7 +16,7 @@
         {{#each burgers}}
         {{#unless this.devoured}}
         <p><strong>{{this.id}}. {{this.burger_name}}</strong></p>
-        {{> burgers/cat-block sleep=true}}
+        {{> burgers/burger-block sleep=true}}
         <br>
         {{/unless}}
         {{/each}}
@@ -34,7 +34,7 @@
         {{#each burgers}}
         {{#if this.devoured}}
         <p><strong>{{this.id}}. {{this.burger_name}}</strong></p>
-        {{> burgers/cat-block sleep=false}}
+        {{> burgers/burger-block sleep=false}}
         {{/if}}
         {{/each}}
       </ul>
