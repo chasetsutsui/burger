@@ -1,0 +1,9 @@
+<li>
+	{{name}}
+
+	{{#unless devoured}}<button class="change-sleep btn btn-light" data-id="{{id}}" data-newsleep="{{devoured}}">
+		<strong>DEVOUR!</strong>
+	</button>{{/unless}}
+
+	<button class="delete-burger btn btn-light" data-id="{{this.id}}"><strong>DELETE!</strong></button>
+</li>
